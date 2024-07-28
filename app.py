@@ -3,7 +3,7 @@ from chatbot import chatbot_response
 
 app = Flask(__name__)
 
-# Storing chat history in session
+# storing chat history in session
 chat_history_ids = {}
 
 @app.route("/")
