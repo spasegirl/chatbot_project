@@ -60,7 +60,7 @@ def chatbot_response(user_input, chat_history_ids=None):
     response = tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
     return response, chat_history_ids
 
-if __name__ == "__main__":
+""" if __name__ == "__main__":
     print("Im ready to talk to you <3.")
     chat_history_ids = None
     while True:
@@ -69,4 +69,4 @@ if __name__ == "__main__":
             print("Chatbot: Bye, take care. See you soon :)")
             break
         response = chatbot_response(user_input)
-        print(f"Chatbot: {response}")
+        print(f"Chatbot: {response}") """
